@@ -1,16 +1,41 @@
 
 
-.wrapper {
+.game-board {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(6, 1fr);
   gap: 8px;
-  aspect-ratio: 1;
   width: 100%;
   max-width: 350px;
   margin-inline: auto;
 }
 
-.wrapper > div {
+.game-board > div {
   border: 1px solid rgb(206, 202, 202);
+  aspect-ratio: 1;
+}
+
+.keyboard {
+  width: 100%;
+  margin-top: 16px;
+  display: grid;
+  gap: 8px;
+}
+
+.keyboard-row {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+}
+
+.key {
+  flex: 1;
+  min-width: 0;
+  max-width: 30px;
+  min-height: 30px;
+}
+
+.key-wide {
+  flex: 1.5;
+  max-width: 66px;
 }
